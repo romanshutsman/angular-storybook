@@ -13,7 +13,7 @@ export class BtnComponent {
   @Output() buttonClick = new EventEmitter<any>();
 
   handleClick(event: any) {
-    this.onBtnClick?.();
+    // this.onBtnClick?.();
     this.buttonClick.emit({evt: event, type: this.type});
   }
 
