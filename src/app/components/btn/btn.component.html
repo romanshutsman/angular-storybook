@@ -1,0 +1,9 @@
+<button
+  [disabled]="disabled"
+  (click)="onClick?.()"
+  [ngClass]="{'primary': type === 'primary',
+  'secondary': type === 'secondary',
+  'delete': type === 'delete',
+  'success': type === 'success',
+  'warn': type === 'warn'}"
+>{{title}}</button>
