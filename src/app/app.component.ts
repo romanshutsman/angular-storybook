@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'taskbox';
+
+  onBtnClick(e: any) {
+    console.log(e);
+    alert(e.type + 'Clicked!')
+  }
 }

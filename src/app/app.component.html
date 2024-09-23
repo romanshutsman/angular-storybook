@@ -176,7 +176,6 @@
     }
   }
 </style>
-<app-inbox-screen></app-inbox-screen>
 <main class="main">
   <div class="content">
     <div class="left-side">
@@ -227,7 +226,13 @@
       </svg>
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <app-btn title="Save" type="primary" (buttonClick)="onBtnClick($event)"></app-btn>
+      <app-btn title="Delete" type="delete" (buttonClick)="onBtnClick($event)"></app-btn>
+      <app-btn title="Good Job" type="success" (buttonClick)="onBtnClick($event)"></app-btn>
+      <app-btn title="Warn" type="warn" (buttonClick)="onBtnClick($event)"></app-btn>
+      <app-inbox-screen></app-inbox-screen>
     </div>
+
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">

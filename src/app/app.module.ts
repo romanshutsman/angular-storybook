@@ -11,9 +11,10 @@ import { AppComponent } from './app.component';
 
 import InboxScreenComponent from './components/inbox-screen/inbox-screen.component';
 import PureInboxScreenComponent from './components/pure-inbox-screen/pure-inbox-screen.component';
+import {BtnComponent} from "./components/btn/btn.component";
 
 @NgModule({
-  declarations: [AppComponent, InboxScreenComponent, PureInboxScreenComponent],
+  declarations: [AppComponent, InboxScreenComponent, PureInboxScreenComponent, BtnComponent],
   imports: [
     BrowserModule,
     TaskModule,
