@@ -12,15 +12,21 @@ import { AppComponent } from './app.component';
 import InboxScreenComponent from './components/inbox-screen/inbox-screen.component';
 import PureInboxScreenComponent from './components/pure-inbox-screen/pure-inbox-screen.component';
 import {BtnComponent} from "./components/btn/btn.component";
+import {CardComponent} from "./components/card/card.component";
+import {InputComponent} from "./components/input/input.component";
+import {RadioButtonComponent} from "./components/radio-button/radio-button.component";
 
 @NgModule({
   declarations: [AppComponent, InboxScreenComponent, PureInboxScreenComponent, BtnComponent],
   imports: [
     BrowserModule,
     TaskModule,
-    NgxsModule.forRoot([], { developmentMode: !environment.production, }),
+    NgxsModule.forRoot([], {developmentMode: !environment.production,}),
     NgxsReduxDevtoolsPluginModule.forRoot(),
-    NgxsLoggerPluginModule.forRoot({ disabled: environment.production, }),
+    NgxsLoggerPluginModule.forRoot({disabled: environment.production,}),
+    CardComponent,
+    InputComponent,
+    RadioButtonComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,23 @@
+<label
+  [ngClass]="{
+    disabled: disabled,
+    large: size === 'large',
+    medium: size === 'medium',
+    small: size === 'small'
+  }"
+><ng-container *ngIf="labelPosition === 'left'"
+><span [ngClass]="labelPosition">{{ label || value }}</span></ng-container
+>
+  <input
+    type="radio"
+    [value]="value"
+    [ngClass]="type"
+    [disabled]="disabled"
+    [name]="name"
+    (click)="select()"
+    [checked]="model === value"
+  />
+  <ng-container *ngIf="labelPosition === 'right'"
+  ><span [ngClass]="labelPosition">{{ label || value }}</span></ng-container
+  >
+</label>

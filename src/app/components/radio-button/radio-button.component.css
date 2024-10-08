@@ -1,0 +1,69 @@
+:host {
+label.disabled span {
+  color: var(--gray5);
+}
+label.large {
+  font-size: large;
+}
+label.large span {
+  vertical-align: top;
+}
+label.large .left {
+  margin-right: 6px;
+  margin-left: 12px;
+}
+label.large .right {
+  margin-left: 6px;
+  margin-right: 12px;
+}
+label.large input {
+  width: 24px;
+  height: 24px;
+}
+label.medium {
+  font-size: medium;
+}
+label.medium span {
+  vertical-align: text-bottom;
+}
+label.medium .left {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+label.medium .right {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+label.medium input {
+  width: 20px;
+  height: 20px;
+}
+label.small {
+  font-size: small;
+}
+label.small span {
+  vertical-align: text-bottom;
+}
+label.small .left {
+  margin-right: 4px;
+  margin-left: 8px;
+}
+label.small .right {
+  margin-left: 4px;
+  margin-right: 8px;
+}
+label.small input {
+  width: 16px;
+  height: 16px;
+}
+label input.primary {
+  accent-color: var(--aquaDark);
+}
+label input.accent {
+  accent-color: var(--indicatorOrangeSecondary);
+}
+label input.warn {
+  accent-color: var(--indicatorRed);
+}
+
+}

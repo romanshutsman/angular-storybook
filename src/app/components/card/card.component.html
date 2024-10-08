@@ -1,0 +1,5 @@
+<div class="card">
+  <ng-content select="[cardTitle]"></ng-content>
+  <ng-content select="[cardContent]"></ng-content>
+  <ng-container [ngTemplateOutlet]="cardAction"></ng-container>
+</div>

@@ -3,18 +3,23 @@ import {BtnComponent} from "./btn.component";
 import {StoryObj} from "@storybook/angular";
 import {action} from "@storybook/addon-actions";
 
-export const actionsData = {
+ const actionsData = {
   onBtnClick: action('onBtnClick'),
 };
 
 const meta: Meta<BtnComponent> = {
-  /* 👇 The title prop is optional.
-   * See https://storybook.js.org/docs/configure/#configure-story-loading
-   * to learn how to generate automatic titles
-   */
   title: 'Shared Primary Button',
   component: BtnComponent,
-
+  argTypes: {
+    type: {
+      options: ['primary', 'success', 'delete', 'warn'],
+      control: { type: 'radio' },
+    },
+    disabled: {
+      options: [true, false],
+      control: { type: 'radio' },
+    }
+  },
   render: (args: BtnComponent) => ({
     props: {
       ...args,
@@ -63,9 +68,9 @@ export const Warn: Story = {
     type: 'warn'
   }
 };
-export const Secondary: Story = {
-  args: {
-    title: 'Secondary',
-    type: 'secondary'
-  }
-};
+// export const Secondary: Story = {
+//   args: {
+//     title: 'Secondary',
+//     type: 'secondary'
+//   }
+// };
